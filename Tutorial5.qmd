@@ -4,11 +4,13 @@ Author: Richi
 format: html
 editor: visual
 ---
+library(tidyverse)
+library(palmerpenguins)
 
+data(package = "palmerpenguins")
 
-
-
-
+ggplot(penguins, aes(x = bill_depth_mm, y = flipper_length_mm, color = species)) +
+    geom_point()
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
